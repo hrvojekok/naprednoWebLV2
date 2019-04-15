@@ -24,8 +24,8 @@ if($files["name"] != '') {
       fwrite($myfile, $encryptedImage);
       fclose($myfile);
 
-
-      echo "<h1><a href='$fullPath'>OK-Click here!</a></h1>";
+      echo("<br><br>Upload succesfull!<br><br>");
+      //echo "<h1><a href='$fullPath'>OK-Click here!</a></h1>";
     }
 }
 echo '<html>
@@ -34,8 +34,8 @@ echo '<html>
 </head>
 <body>
 <form method=POST enctype="multipart/form-data" action="">
-<input type=text name=path>
-<input type="file" name="files">
+<input type=text name=path accept = "images/jpeg, images/png, application/pdf">
+<input type="file" name="files" accept="image/jpeg, image/png, application/pdf">
 <input type=submit value="Up">
 </form>
 </body></html>';
