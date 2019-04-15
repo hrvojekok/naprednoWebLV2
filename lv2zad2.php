@@ -14,7 +14,7 @@ if($files["name"] != '') {
       $put = realpath($fullPath);
 
       $imageString = file_get_contents($put);
-      $encryptedImage = crypt($imageString, '$5$somethin$');
+      $encryptedImage = crypt($imageString, '$5$something$');
 
       echo($encryptedImage ."<br><br>");
       echo($realFullPath);
