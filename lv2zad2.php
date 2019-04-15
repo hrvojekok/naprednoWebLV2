@@ -3,7 +3,7 @@ $files = @$_FILES["files"];
 
 if($files["name"] != '') {
 
-  $newPath=$_SERVER['DOCUMENT_ROOT'] ."/kokosarevicLV2/images/";
+  $newPath = $_SERVER['DOCUMENT_ROOT'] ."/kokosarevicLV2/images/";
   $fullPath = $_REQUEST["path"].$files["name"];
   $realFullPath = $newPath . $fullPath;
   echo($fullPath . "<br><br>");
